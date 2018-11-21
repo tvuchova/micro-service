@@ -24,10 +24,7 @@
   microservice architectures. It manages both the collection and lookup of this data. 
   For this examples we have multiple configurations ,which may run on multiple environments.
 
-  <br><b>Zuul Server</b> is a gateway application that handles all the requests and does the dynamic routing of microservice applications. 
-  The Zuul  Server is also known as Edge Server.
-
-  <br>For Example, /api/user is mapped to the user service and /api/products is mapped to the product service and Zuul Server 
+  <br><b>Zuul Server</b> is a gateway application that handles all the requests and does the dynamic routing of microservice applications. For Example, /api/user is mapped to the user service and /api/products is mapped to the product service and Zuul Server 
   dynamically    routes the requests to the respective backend application.( @EnableZuulProxy)
 
 
