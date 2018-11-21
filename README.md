@@ -20,20 +20,20 @@
    eureka.client.fetchRegistry = false
    server.port = 8761</i>
   
-  Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in
+  <br><b>Zipkin</b> is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in
   microservice architectures. It manages both the collection and lookup of this data. 
   For this examples we have multiple configurations ,which may run on multiple environments.
 
-  Zuul Server is a gateway application that handles all the requests and does the dynamic routing of microservice applications. 
+  <br><b>Zuul Server</b> is a gateway application that handles all the requests and does the dynamic routing of microservice applications. 
   The Zuul  Server is also known as Edge Server.
 
-  For Example, /api/user is mapped to the user service and /api/products is mapped to the product service and Zuul Server 
+  <br>For Example, /api/user is mapped to the user service and /api/products is mapped to the product service and Zuul Server 
   dynamically    routes the requests to the respective backend application.( @EnableZuulProxy)
 
 
 
-  Currency exchange microservice is used to convert one currency to another and take convertion rate from database:
-    localhost:8100/currency_exchange/from/USD/to/EUR,will return in json converion rate from USD to EUR.
+ <br> Currency exchange microservice is used to convert one currency to another and take convertion rate from database:
+   <br> localhost:8100/currency_exchange/from/USD/to/EUR,will return in json converion rate from USD to EUR.
 
-  Currency converion microservice will calculate and return the converted amount:
-    localhost:8100/currency_convertion/from/USD/to/EUR/quantity/1000
+ <br> Currency converion microservice will calculate and return the converted amount:
+  <br>  localhost:8100/currency_convertion/from/USD/to/EUR/quantity/1000
